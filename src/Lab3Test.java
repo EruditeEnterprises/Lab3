@@ -18,6 +18,13 @@ public class Lab3Test {
 		assertEquals(this.list, primeFactors(2));
 		this.list.clear();
 	}
+	
+	@Test
+	public void testPrimeFactorsForThree() {
+		this.list.add(3);
+		assertEquals(this.list, primeFactors(3));
+		this.list.clear();
+	}
 
 	public ArrayList<Integer> primeFactors(int integer){
 		if(integer == 1)
