@@ -31,8 +31,8 @@ public class Lab3Test {
 		{
 			return new ArrayList<>();
 		}
-		ArrayList<Integer> newList = new ArrayList<Integer>();
-		newList.add(2);
+		ArrayList<Integer> newList = new ArrayList<>();
+		newList.add(integer);
 		return newList;
 		}
 }
