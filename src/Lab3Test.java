@@ -20,6 +20,12 @@ public class Lab3Test {
 	}
 
 	public ArrayList<Integer> primeFactors(int integer){
-		return new ArrayList<Integer>();
-	}
+		if(integer == 1)
+		{
+			return new ArrayList<>();
+		}
+		ArrayList<Integer> newList = new ArrayList<Integer>();
+		newList.add(2);
+		return newList;
+		}
 }
