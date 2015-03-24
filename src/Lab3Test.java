@@ -13,6 +13,6 @@ public class Lab3Test {
 	}
 
 	public ArrayList<Integer> primeFactors(int integer){
-		return null;
+		return new ArrayList<Integer>();
 	}
 }
