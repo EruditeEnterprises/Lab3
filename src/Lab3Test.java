@@ -28,5 +28,10 @@ public class Lab3Test {
 	public void testPrimeFactorsForFour() {
 		assertEquals(list(2,2), PrimeFactor.primeFactors(4));
 	}
+	
+	@Test
+	public void testPrimeFactorsForSix() {
+		assertEquals(list(2,3), PrimeFactor.primeFactors(6));
+	}
 
 }
