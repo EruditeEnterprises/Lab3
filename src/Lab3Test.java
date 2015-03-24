@@ -6,10 +6,17 @@ import org.junit.Test;
 
 
 public class Lab3Test {
-
+	public ArrayList<Integer> list =new ArrayList<>();
 	@Test
 	public void testPrimeFactorsForOne() {
-		assertEquals(new ArrayList<Integer>(), primeFactors(1));
+		assertEquals(this.list, primeFactors(1));
+	}
+	
+	@Test
+	public void testPrimeFactorsForTwo() {
+		this.list.add(2);
+		assertEquals(this.list, primeFactors(2));
+		this.list.clear();
 	}
 
 	public ArrayList<Integer> primeFactors(int integer){
