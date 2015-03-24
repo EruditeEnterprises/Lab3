@@ -5,11 +5,15 @@ import java.util.List;
 public class PrimeFactor {
 
 	public static List<Integer> primeFactors(int integer){
-		ArrayList<Integer> newList = new ArrayList<>();
+		ArrayList<Integer> primes = new ArrayList<>();
+		if(integer % 2 == 0){
+			primes.add(2);
+			integer/=2;
+		}
 		if(integer > 1)
 		{
-			newList.add(integer);
+			primes.add(integer);
 		}
-		return newList;
+		return primes;
 		}
 }
