@@ -4,17 +4,12 @@ import java.util.List;
 
 public class PrimeFactor {
 
-	public static List<Integer> primeFactors(int integer){
+	public static List<Integer> primeFactors(int i){
 		ArrayList<Integer> primes = new ArrayList<>();
-		for(;integer % 2 == 0;integer/=2){
-			primes.add(2);
-		}
-		for(;integer % 3 == 0;integer/=3){
-			primes.add(3);
-		}
-		if(integer > 1)
-		{
-			primes.add(integer);
+		for(int j = 2; i>1; j++){
+			for(;i % j == 0;i/=j){
+				primes.add(j);
+			}
 		}
 		return primes;
 		}
