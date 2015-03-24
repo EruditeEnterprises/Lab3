@@ -43,5 +43,11 @@ public class Lab3Test {
 	public void testPrimeFactorsForNine() {
 		assertEquals(list(3,3), PrimeFactor.primeFactors(9));
 	}
+	
+	@Test
+	public void testPrimeFactorsFor325115() {
+		assertEquals(list(5,7,7,1327), PrimeFactor.primeFactors(325115));
+	}
+	
 
 }
