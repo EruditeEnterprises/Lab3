@@ -1,36 +1,32 @@
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import org.junit.Test;
 
 
 public class Lab3Test {
-	public ArrayList<Integer> list =new ArrayList<>();
+	private List<Integer> list(Integer...integers){
+		return Arrays.asList(integers);
+	}
 	@Test
 	public void testPrimeFactorsForOne() {
-		assertEquals(this.list, PrimeFactor.primeFactors(1));
+		assertEquals(list(), PrimeFactor.primeFactors(1));
 	}
 	
 	@Test
 	public void testPrimeFactorsForTwo() {
-		this.list.add(2);
-		assertEquals(this.list, PrimeFactor.primeFactors(2));
-		this.list.clear();
+		assertEquals(list(2), PrimeFactor.primeFactors(2));
 	}
 	
 	@Test
 	public void testPrimeFactorsForThree() {
-		this.list.add(3);
-		assertEquals(this.list, PrimeFactor.primeFactors(3));
-		this.list.clear();
+		assertEquals(list(3), PrimeFactor.primeFactors(3));
 	}
 	@Test
 	public void testPrimeFactorsForFour() {
-		this.list.add(2);
-		this.list.add(2);
-		assertEquals(this.list, PrimeFactor.primeFactors(4));
-		this.list.clear();
+		assertEquals(list(2,2), PrimeFactor.primeFactors(4));
 	}
 
 }
