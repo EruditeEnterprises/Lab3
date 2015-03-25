@@ -7,7 +7,7 @@ import org.junit.Test;
 
 
 public class Lab3Test {
-	private List<Integer> list(Integer...integers){
+	private static List<Integer> list(Integer...integers){
 		return Arrays.asList(integers);
 	}
 	@Test
